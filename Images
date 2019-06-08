@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>A demonstration of how to access an IMG element</h3>
+
+<img id="myImg" src="img_pulpit.jpg" alt="The Pulpit Rock" width="304" height="228">
+
+<p>Click the button to get the URL of the image.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myImg").src;
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
+
+</body>
+</html>
